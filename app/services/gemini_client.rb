@@ -6,7 +6,7 @@ require "json"
 
 class GeminiClient
   def self.ask(query)
-    api_key = ENV["GEMINI_API_KEY"]
+    api_key = "AIzaSyCLnvZX_SUvNCae3M-v8tIizyJC77ZMEP0" #ENV["GEMINI_API_KEY"]
     model = "gemini-flash-latest"
     url = URI("https://generativelanguage.googleapis.com/v1beta/models/#{model}:generateContent?key=#{api_key}")
 
